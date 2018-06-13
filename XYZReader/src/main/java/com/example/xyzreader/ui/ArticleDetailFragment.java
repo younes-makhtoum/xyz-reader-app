@@ -205,9 +205,6 @@ public class ArticleDetailFragment extends Fragment implements
         bylineView.setMovementMethod(new LinkMovementMethod());
         TextView bodyView = (TextView) mRootView.findViewById(R.id.article_body);
 
-
-        bodyView.setTypeface(Typeface.createFromAsset(getResources().getAssets(), "Rosario-Regular.ttf"));
-
         if (mCursor != null) {
             mRootView.setAlpha(0);
             mRootView.setVisibility(View.VISIBLE);
@@ -253,6 +250,8 @@ public class ArticleDetailFragment extends Fragment implements
 
                         }
                     });
+            bodyView.setTextColor(mMutedColor);
+
         } else {
             mRootView.setVisibility(View.GONE);
             titleView.setText("N/A");

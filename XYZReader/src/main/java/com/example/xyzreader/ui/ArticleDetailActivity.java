@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowInsets;
 
+import com.ToxicBakery.viewpager.transforms.ScaleInOutTransformer;
 import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
 import com.example.xyzreader.data.ItemsContract;
@@ -76,6 +77,9 @@ public class ArticleDetailActivity extends AppCompatActivity
                 updateUpButtonPosition();
             }
         });
+
+        // Animate the ViewPager
+        mPager.setPageTransformer(true, new ScaleInOutTransformer());
 
         mUpButtonContainer = findViewById(R.id.up_container);
 

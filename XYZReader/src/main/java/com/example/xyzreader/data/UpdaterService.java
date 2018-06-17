@@ -70,7 +70,7 @@ public class UpdaterService extends IntentService {
                         .replace("\r"," ")
                         .replace("\n"," ")
                         .toLowerCase()
-                        .substring(0,500));
+                        .substring(0,1000));
                 values.put(ItemsContract.Items.THUMB_URL, object.getString("thumb" ));
                 values.put(ItemsContract.Items.PHOTO_URL, object.getString("photo" ));
                 values.put(ItemsContract.Items.ASPECT_RATIO, object.getString("aspect_ratio" ));

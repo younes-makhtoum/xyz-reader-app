@@ -18,7 +18,12 @@
 <resources>
 
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
-
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="android:colorPrimary">@color/theme_primary_purple_500</item>
+        <!-- colorPrimaryDark is used for status bar -->
+        <item name="android:colorPrimaryDark">@color/theme_primary_dark_purple_700</item>
+        <!-- colorAccent is used as the default value for colorControlActivated, used to tint widgets -->
+        <item name="android:colorAccent">@color/theme_accent_red_A200</item>
     </style>
 
     <style name="Theme.Bacon.Detail">

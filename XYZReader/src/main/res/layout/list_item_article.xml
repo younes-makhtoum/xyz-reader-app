@@ -7,6 +7,7 @@
     android:layout_marginTop="4dp"
     android:clickable="true"
     android:focusable="true"
+    android:elevation="@dimen/cardview_default_elevation"
     android:foreground="?selectableItemBackground">
 
     <LinearLayout
@@ -28,7 +29,7 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="4"
-            android:padding="4dp"
+            android:padding="16dp"
             android:textColor="@color/theme_primary_dark_purple_700" />
 
         <TextView
@@ -38,7 +39,7 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="2"
-            android:padding="4dp"
+            android:padding="16dp"
             android:textColor="@color/theme_primary_purple_500" />
 
     </LinearLayout>
